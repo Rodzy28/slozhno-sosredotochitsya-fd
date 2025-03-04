@@ -12,6 +12,6 @@
   --subtitle-color: #000028;
   --text-color: #f1b2ce;
   --bg-color: #000028;
-  --hero-color: #db00ff;
-  --hero-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --big-title-color: #db00ff;
+  --big-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
