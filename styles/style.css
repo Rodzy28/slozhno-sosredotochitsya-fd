@@ -208,3 +208,55 @@
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
   text-transform: lowercase;
 }
+
+@media (width >= 768px) {
+  .header {
+    min-block-size: 1024px;
+    padding: 20px;
+    margin-block-end: 60px;
+  }
+
+  .header__title {
+    justify-self: start;
+    position: relative;
+    inset-inline-start: -20px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .header__rec {
+    top: 20px;
+    right: 29px;
+  }
+
+  .header__text {
+    justify-self: end;
+    inline-size: 50%;
+    max-inline-size: 491px;
+  }
+
+  .main {
+    padding-inline: 20px;
+    gap: 80px;
+  }
+
+  .section {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .section__title {
+    grid-row: 1 / span 2;
+  }
+
+  .card {
+    grid-column: 2;
+  }
+}
