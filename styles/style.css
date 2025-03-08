@@ -1,32 +1,29 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font, monospace);
+  font-size: var(--main-font-size, 18px);
+  line-height: 23.4px;
   background-color: var(--bg-color, #000028);
   background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: var(--main-font, monospace);
-  font-size: var(--main-font-size, 18px);
-  line-height: 23.4px;
 }
 
 .title-decor {
-  background-color: var(--accent-color, #ff0070);
   color: var(--subtitle-color, #000028);
+  background-color: var(--accent-color, #ff0070);
 }
 
 .header {
-  block-size: 100vh;
-  min-block-size: 668px;
+  position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  align-items: center;
   justify-items: center;
-  position: relative;
-  padding: 10px;
+  align-items: center;
   margin-block-end: 40px;
+  padding: 10px;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .header__rec {
@@ -42,12 +39,12 @@
 
 .header__rec::after {
   content: "";
+  display: inline-block;
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  display: inline-block;
-  background-color: var(--accent-color, #ff0070);
   box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+  background-color: var(--accent-color, #ff0070);
 }
 
 .header__theme-menu {
@@ -55,12 +52,12 @@
 }
 
 .header__title {
+  color: var(--big-title-color, #db00ff);
   font-weight: 700;
   font-size: var(--big-title-size, 116px);
   line-height: 82.5%;
-  color: var(--big-title-color, #db00ff);
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
   text-transform: lowercase;
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
 .header__text {
@@ -76,16 +73,16 @@
 .header__theme-menu-button {
   border: none;
   color: var(--menu-color, #ff0070);
-  background-color: transparent;
+  line-height: 1;
   text-transform: lowercase;
+  background-color: transparent;
+  cursor: pointer;
   min-inline-size: 70px;
   min-block-size: 26px;
-  cursor: pointer;
-  line-height: 1;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--menu-hover-color, rgba(255, 0, 112, .4));
+  outline: 1px solid var(--menu-hover-color, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button:focus {
@@ -97,8 +94,8 @@
 }
 
 .header__theme-menu-button_active {
-  pointer-events: none;
   outline: 1px solid var(--menu-color, #ff0070);
+  pointer-events: none;
 }
 
 .decorated-zone {
@@ -107,33 +104,33 @@
 
 .decorated-zone::before {
   content: "";
+  position: absolute;
   display: block;
+  border-inline-end: 1px solid var(--menu-color, #ff0070);
+  border-block-start: 1px solid var(--menu-color, #ff0070);
   block-size: 25px;
   inline-size: 25px;
-  border-block-start: 1px solid var(--menu-color, #ff0070);
-  border-inline-end: 1px solid var(--menu-color, #ff0070);
   inset-block-start: 10px;
   inset-inline-end: 10px;
-  position: absolute;
 }
 
 .decorated-zone::after {
   content: "";
+  position: absolute;
   display: block;
+  border-inline-start: 1px solid var(--menu-color, #ff0070);
+  border-block-end: 1px solid var(--menu-color, #ff0070);
   block-size: 25px;
   inline-size: 25px;
-  border-block-end: 1px solid var(--menu-color, #ff0070);
-  border-inline-start: 1px solid var(--menu-color, #ff0070);
   inset-block-end: 10px;
   inset-inline-start: 10px;
-  position: absolute;
 }
 
 .main {
-  padding-inline: 10px;
   display: grid;
   gap: 50px;
   margin-block-end: 40px;
+  padding-inline: 10px;
 }
 
 .section {
@@ -157,8 +154,8 @@
 }
 
 .card__title {
-  font-size: var(--main-font-size, 18px);
   margin-block-end: 10px;
+  font-size: var(--main-font-size, 18px);
 }
 
 .card__title_weight_regular {
@@ -166,8 +163,8 @@
 }
 
 .card__text {
-  font-weight: 400;
   color: var(--text-color);
+  font-weight: 400;
 }
 
 .link {
@@ -198,36 +195,36 @@
 }
 
 .footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   block-size: 100vh;
   min-block-size: 668px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 10px;
 }
 
 .footer__title {
+  color: var(--big-title-color, #db00ff);
   font-weight: 700;
   font-size: var(--big-title-size, 116px);
   line-height: 82.5%;
-  color: var(--big-title-color, #db00ff);
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
   text-transform: lowercase;
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
 @media (width >= 768px) {
   .header {
-    min-block-size: 1024px;
-    padding: 20px;
     margin-block-end: 60px;
+    padding: 20px;
+    min-block-size: 1024px;
   }
 
   .header__title {
-    justify-self: start;
     position: relative;
-    inset-inline-start: -20px;
+    justify-self: start;
     font-size: var(--big-title-size, 120px);
+    inset-inline-start: -20px;
   }
 
   .decorated-zone::before {
@@ -236,8 +233,8 @@
   }
 
   .decorated-zone::after {
-    left: 20px;
     bottom: 20px;
+    left: 20px;
   }
 
   .header__rec {
@@ -252,8 +249,9 @@
   }
 
   .main {
-    padding-inline: 20px;
     gap: 80px;
+    margin-block-end: 60px;
+    padding-inline: 20px;
   }
 
   .section {
@@ -271,8 +269,8 @@
   .card-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 20px;
     grid-column: 1 / -1;
+    row-gap: 20px;
   }
 
   .images .section__subtitle {
@@ -303,10 +301,6 @@
 
   .images__item:nth-of-type(5) {
     grid-column: span 2;
-  }
-
-  .main {
-    margin-block-end: 60px;
   }
 
   .footer__title {
