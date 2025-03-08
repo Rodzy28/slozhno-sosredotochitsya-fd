@@ -8,10 +8,12 @@
   --main-font-size: 18px;
   --bg-image: url("../images/cover-image-dark.png");
   --accent-color: #ff0070;
-  --title-color: var(--accent-color);
+  --title-color: #ff0070;
   --subtitle-color: #000028;
   --text-color: #f1b2ce;
   --bg-color: #000028;
+  --menu-color: #ff0070;
+  --menu-hover-color: rgba(255, 0, 112, .4);
   --big-title-color: #db00ff;
   --big-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }

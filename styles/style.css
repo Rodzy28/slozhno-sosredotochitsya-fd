@@ -75,7 +75,7 @@
 
 .header__theme-menu-button {
   border: none;
-  color: var(--accent-color, #ff0070);
+  color: var(--menu-color, #ff0070);
   background-color: transparent;
   text-transform: lowercase;
   min-inline-size: 70px;
@@ -85,7 +85,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid var(--menu-hover-color, rgba(255, 0, 112, .4));
 }
 
 .header__theme-menu-button:focus {
@@ -93,12 +93,12 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--menu-color, #ff0070);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid var(--accent-color, #ff0070);
+  outline: 1px solid var(--menu-color, #ff0070);
 }
 
 .decorated-zone {
@@ -110,8 +110,8 @@
   display: block;
   block-size: 25px;
   inline-size: 25px;
-  border-block-start: 1px solid var(--accent-color, #ff0070);
-  border-inline-end: 1px solid var(--accent-color, #ff0070);
+  border-block-start: 1px solid var(--menu-color, #ff0070);
+  border-inline-end: 1px solid var(--menu-color, #ff0070);
   inset-block-start: 10px;
   inset-inline-end: 10px;
   position: absolute;
@@ -122,8 +122,8 @@
   display: block;
   block-size: 25px;
   inline-size: 25px;
-  border-block-end: 1px solid var(--accent-color, #ff0070);
-  border-inline-start: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--menu-color, #ff0070);
+  border-inline-start: 1px solid var(--menu-color, #ff0070);
   inset-block-end: 10px;
   inset-inline-start: 10px;
   position: absolute;
@@ -142,7 +142,7 @@
 }
 
 .section__title {
-  color: var(--accent-color, #ff0070);
+  color: var(--title-color, #ff0070);
   font-weight: 700;
   font-size: var(--main-font-size, 18px);
 }
