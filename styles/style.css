@@ -159,12 +159,28 @@
   gap: 10px;
 }
 
+.section-advices .card {
+  gap: 20px;
+}
+
+.card-advices {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-advices .card__text:not(:last-child) {
+  margin-block-end: 20px;
+}
+
 .card__title {
   font-size: var(--main-font-size, 18px);
 }
 
-.card__title_weight_regular {
+.card__subtitle {
   font-weight: 400;
+  font-size: var(--main-font-size, 18px);
+  margin-block-end: 10px;
 }
 
 .card__text {
@@ -261,10 +277,6 @@
 
   .section {
     grid-template-columns: 1fr 2fr;
-  }
-
-  .section__title {
-    grid-row: 1 / span 2;
   }
 
   .card {
