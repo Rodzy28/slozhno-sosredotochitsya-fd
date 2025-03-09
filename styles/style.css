@@ -153,8 +153,13 @@
   row-gap: 19px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .card__title {
-  margin-block-end: 10px;
   font-size: var(--main-font-size, 18px);
 }
 
